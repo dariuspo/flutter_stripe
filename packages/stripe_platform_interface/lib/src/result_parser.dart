@@ -6,8 +6,8 @@ class ResultParser<T> {
   }) : _parseJson = parseJson;
 
   T parse(
-      {required Map<String, dynamic> result, required String succesResultKey}) {
-    final succesResponse = result[succesResultKey];
+      {required Map<String, dynamic> result, required String successResultKey}) {
+    final succesResponse = result[successResultKey];
 
     if (succesResponse != null) {
       return _parseJson(succesResponse);
